@@ -30,25 +30,53 @@ input:checked.defaultCheckbox::before {
 
 
 @keyframes slideInOut {
-	0% {
-		transform: translateX(100%);
-		opacity: 1;
-	}
-	30% {
-		transform: translateX(0);
-		opacity: 1;
-	}
+    0% {
+        transform: translate3d(0%, 0, 0);
+        opacity: .3;
+    }
+    30% {
+        transform: translate3d(0, 0, 0);
+        opacity: .6;
+    }
+    50% {
+        transform: translate3d(0, 0, 0);
+        opacity: .9;
+    }
 	70% {
-		transform: translateX(0);
-		opacity: 1;
-	}
-	100% {
-		transform: translateX(-100%);
-		opacity: 0;
-	}
+        transform: translate3d(0, 0, 0);
+        opacity: 7;
+    }
+	850% {
+        transform: translate3d(0, 0, 0);
+        opacity: .5;
+    }
+    100% {
+        transform: translate3d(0%, 0, 0);
+        opacity: .2;
+    }
 }
 
 .welcome-text {
-	display: inline-block !important;
-	animation: slideInOut 3s infinite !important;
-} 
+    display: inline-block !important;
+    animation: slideInOut 3s infinite !important;
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        opacity: .5;
+        transform: scale(.8);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: .6;
+        transform: scale(.7);
+    }
+}
+
+.background-animation {
+    animation: backgroundAnimation 5s infinite alternate;
+}
+

@@ -53,15 +53,25 @@ export default function Auth() {
                   />
                 </Routes>
 
-                <div className="mt-30 mb-30 absolute right-0 hidden h-96 min-h-screen md:block lg:w-[49vw] 2xl:w-[44vw]">
-                <h4 className="welcome-text mb-2.5 text-6xl font-bold text-navy-700 dark:text-white">
-                  Smart Virtual Classroom
-                </h4>
+                <div className="absolute right-0 hidden h-96 min-h-screen md:block lg:w-[49vw] 2xl:w-[44vw]">
+                
+                <div className="relative mt-30 mb-30 right-0 hidden h-96 min-h-screen md:block lg:w-[49vw] 2xl:w-[44vw]">
+                  <h4 className="welcome-text absolute top-10 right-0 left-0 welcome-text mb-2.5 text-6xl font-bold text-navy-700 dark:text-white text-center">
+                    Smart Virtual Classroom
+                  </h4>
                   <div
-                    className="absolute flex h-full w-full items-end justify-center bg-cover bg-center lg:rounded-bl-[120px] xl:rounded-bl-[200px]"
-                    style={{ backgroundImage: `url(${authImg})` }}
+                    className="background-animation absolute flex h-full w-full items-center justify-center bg-cover bg-center lg:rounded-bl-[120px] xl:rounded-bl-[200px] "
+                    style={{ 
+                      backgroundImage: `url(${authImg})`,
+                      backgroundSize: 'contain',
+                      backgroundPosition: 'center',
+                      backgroundRepeat: 'no-repeat'
+                    }}
                   />
                 </div>
+
+              </div>
+
                 
               </div>
               <Footer />
