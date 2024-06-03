@@ -43,7 +43,7 @@ export default function Admin(props) {
         return routes[i].secondary;
       }
     }
-    return activeNavbar;
+    return "JEWEL";
   };
   const getRoutes = (routes) => {
     return routes.map((prop, key) => {

@@ -1,6 +1,7 @@
 import React from "react";
 
 // Admin Imports
+import Classroom from "views/admin/classroom";
 import MainDashboard from "views/admin/default";
 import NFTMarketplace from "views/admin/marketplace";
 import Profile from "views/admin/profile";
@@ -21,9 +22,16 @@ import {
 
 const routes = [
   {
-    name: "Main Dashboard",
+    name: "Class Room",
     layout: "/admin",
     path: "default",
+    icon: <MdHome className="h-6 w-6" />,
+    component: <Classroom/>,
+  },
+  {
+    name: "Main Dashboard",
+    layout: "/admin",
+    path: "main-dashboard",
     icon: <MdHome className="h-6 w-6" />,
     component: <MainDashboard />,
   },
